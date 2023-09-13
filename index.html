@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EggTimer.club</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/cb70851684.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@900&family=Raleway&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <script src="https://kit.fontawesome.com/cb70851684.js" crossorigin="anonymous"></script>   
+</head>
+
+<body>
+        <h1 id="logo">EggTimer.club</h1>
+        
+        <session id="line-1">
+            <div class="egg-counter">
+                <p class="text-counter" id="counter">00:00</p>
+                <div class="invisible-egg-ready" id="ready">
+                    <audio src="./sounds/alarm_eggtimer.wav" id="alarm-ready" autoplay></audio>
+                    <h2>Ready!</h2>
+                    <button id="reset-btn" onclick="reset()">Reset</button>
+                </div>
+            </div>
+
+            <div class="cards-container">
+                <div class="egg-invisible" id="card-egg-6min">
+                    <img src="./img/6 minutes egg.png" alt="Picture of a egg yolk cooked for 6 minutes, creamy, almost liquid texture." class="img-card">
+                    <p class="text-egg">The egg is solid yet soft in texture, with the yolk partially cooked and creamy. The overall texture is smooth, and the yolk isn't runny but slightly fluid at the centre. Great for dishes like salads or sandwiches.</p>
+                </div>
+                <div class="egg-invisible" id="card-egg-8min">
+                    <img src="./img/8 minutes egg.png" alt="Picture of a egg yolk cooked for 8 minutes, creamy texture." class="img-card">
+                    <p class="text-egg">The egg white is completely solid and firm, while the yolk is cooked but still maintains a slightly creamy centre. The overall texture is firm, and this kind of egg is excellent for complementing dishes or enjoying as a snack.</p>
+                </div>
+                <div class="egg-invisible" id="card-egg-10min">
+                    <img src="./img/10 minutes egg.png" alt="Picture of a egg yolk cooked for 10 minutes. The center of the egg has soft, almost creamy texture, but the yolk is fully cooked." class="img-card">
+                    <p class="text-egg">The egg yolk is fully solid and firm. The overall texture is firm in both the egg white and the yolk. This type of egg is ideal for slicing into salads, making deviled eggs, or simply enjoying with seasonings.</p>
+                </div>
+                <div class="egg-invisible" id="card-egg-12min">
+                    <img src="./img/12 minutes egg.png" alt="Picture of a egg yolk cooked for 12 minutes, the yellow is completely cooked." class="img-card">
+                    <p class="text-egg">The egg has a completely solid and rigid egg white, along with a fully cooked yolk. This type of egg is perfect for dishes requiring well-cooked eggs, such as stuffed eggs or homemade mayonnaise.</p>
+                </div>
+                <div class="egg-invisible" id="card-egg-15min">
+                    <img src="./img/15 minutes egg.png" alt="Picture of a egg yolk cooked for 15 minutes, the yolk is hard, over cooked." class="img-card">
+                    <p class="text-egg">There might be a unpleasant sulphur aroma resulting from the chemical reaction during cooking. The yolk's texture could become grainy on a greenish hue. It's preferable to opt for shorter cooking times.</p>
+                </div>
+            </div>
+        </session>
+
+        <session id="line-2">
+                <ul id="timer-start">
+                    <li class="timer-start-item"><button id="round-6min-btn" class="start-btn start-btn-shadow" onclick="startTimer(6)">6 min</button></li>
+                        <li class="show-card-btn"><button class="eye-btn eye-btn-shadow" onclick="toggleShowCard('card-egg-6min')"><i id="openedeye-6min" class="fa-solid fa-eye"></i></button></li>
+                    <li class="timer-start-item"><button class="start-btn start-btn-shadow" onclick="startTimer(8)">8 min</button></li>
+                        <li class="show-card-btn"><button class="eye-btn eye-btn-shadow" onclick="toggleShowCard('card-egg-8min')"><i id="openedeye-8min" class="fa-solid fa-eye"></i></button></li>
+                    <li class="timer-start-item"><button class="start-btn start-btn-shadow" onclick="startTimer(10)">10 min</button></li>
+                        <li class="show-card-btn"><button class="eye-btn eye-btn-shadow" onclick="toggleShowCard('card-egg-10min')"><i id="openedeye-10min" class="fa-solid fa-eye"></i></button></li>
+                    <li class="timer-start-item"><button class="start-btn start-btn-shadow" onclick="startTimer(12)">12 min</button></li>
+                        <li class="show-card-btn"><button class="eye-btn eye-btn-shadow" onclick="toggleShowCard('card-egg-12min')"><i id="openedeye-12min" class="fa-solid fa-eye"></i></button></li>
+                    <li class="timer-start-item"><button class="start-btn start-btn-shadow" onclick="startTimer(15)">15 min</button></li>
+                        <li class="show-card-btn"><button id="round-eye-btn" class="eye-btn eye-btn-shadow" onclick="toggleShowCard('card-egg-15min')"><i id="openedeye-15min" class="fa-solid fa-eye"></i></button></li>
+                </ul>
+            </session>  
+
+    <footer>
+        <div id="footer-first-line">
+            <ul class="footer-list">
+                <li id="footer-list-text">Developed by Fernando Xavier</li>
+                <li class="footer-list-item"><a href="#" class="footer-link"><i id="email-icon" class="fa-solid fa-envelope" alt="Email icon."></i></a></li>
+                <li class="footer-list-item"><a href="#" class="footer-link"><i id="linkedin-icon" class="fa-brands fa-linkedin" alt="Linkedin icon" ></i></a></li>
+            </ul>
+        </div>
+        <div id="footer-second-line">
+            <p>Copyright &copy 2023 All right reserved by Fernando Xavier.</p>
+        </div>
+    </footer>
+ 
+    
+<script src="./main.js"></script>
+
+
+
+
+<!-- novo teste -->
+</body>
+</html>
