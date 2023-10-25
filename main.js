@@ -3,7 +3,7 @@ let timeAdjust = "";
 let started = 0;
 
 let startTimer = (time) => {
-    this.time = time * 1;
+    this.time = time * 60;
     document.getElementById('counter').innerHTML = timeConverter(this.time);
     if (started === 0) {
         started = 1;
